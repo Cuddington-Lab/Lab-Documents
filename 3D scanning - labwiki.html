@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html dir="ltr" class="client-js" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8"><title>3D scanning - labwiki</title>
+<meta name="generator" content="MediaWiki 1.22.0">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="http://ecotheory.uwaterloo.ca/labwiki/index.php?title=3D_scanning&amp;action=edit">
+<link rel="edit" title="Edit" href="http://ecotheory.uwaterloo.ca/labwiki/index.php?title=3D_scanning&amp;action=edit">
+<link rel="shortcut icon" href="http://ecotheory.uwaterloo.ca/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://ecotheory.uwaterloo.ca/labwiki/opensearch_desc.php" title="labwiki (en)">
+<link rel="EditURI" type="application/rsd+xml" href="http://ecotheory.uwaterloo.ca/labwiki/api.php?action=rsd">
+<link rel="alternate" type="application/atom+xml" title="labwiki Atom feed" href="http://ecotheory.uwaterloo.ca/labwiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="stylesheet" href="3D%20scanning%20-%20labwiki_files/load.css">
+<style>
+.mw-collapsible-toggle{float:right} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+/* cache key: c4aps1:resourceloader:filter:minify-css:7:4250852ed2349a0d4d0fc6509a3e7d4c */
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px -1px 0 0} html > body .suggestions{margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left}.suggestions-result-current{background-color:#4C59A6;color:white}.suggestions-special .special-label{color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white}.autoellipsis-matched,.highlight{font-weight:bold}
+/* cache key: c4aps1:resourceloader:filter:minify-css:7:9780324491b653a3780e2d029bdc140c */
+.postedit-container{margin:0 auto;position:fixed;top:0;height:0;left:50%;z-index:1000;font-size:13px}.postedit-container:hover{cursor:pointer}.postedit{position:relative;top:0.6em;left:-50%;padding:.6em 3.6em .6em 1.1em;line-height:1.5625em;color:#626465;background-color:#f4f4f4;border:1px solid #dcd9d9;text-shadow:0 0.0625em 0 rgba(255,255,255,0.5);border-radius:5px;-webkit-box-shadow:0 2px 5px 0 #ccc;box-shadow:0 2px 5px 0 #ccc;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out}.skin-monobook .postedit{top:6em !important}.postedit-faded{opacity:0}.postedit-icon{padding-left:41px;  line-height:25px;background-repeat:no-repeat;background-position:8px 50%}.postedit-icon-checkmark{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABblBMVEUAAAD///////9PfTf///80aRdTgjn///9Feij///////////9Rfzf///////////9PfjZRgDh1o1xOfTb///////+bwYqLtnj///////9PfTa82K////9WhT6YxIL///9QgDdTgzr////////j7uDl7eLq8efi693k7OH///////9UhjuBr2rp9uRUhjr///9YljVKgir///9WiTlYjT3////9/v57vFlbkT5PjC9dlD/5/fhuq09stUTs9uhxuElctCpfnT1huDFloEZloUZmpENmvDZpvDxpvTxqvjxrvT5rvT9rwTxsqktswD5uwkBvuUdxw0NztFBztU9ztVBzwkp0tlJ1xkd2t1R3uVR4w1F4xk54x014yE15uVZ5v1R5xVB6v1R7yFJ8wVh9xVl9yFR9yVd9ylN+xVh+yFd/x1l/yFeAylmEx1+Ny2uY0Hqe04Wj1Ymv3Ze33qLD47TJ5L3O6cPU7Mrq9eb2+/Q4j37OAAAAQHRSTlMAAQIEBAUFBQwPFB4fJCUoKiosQEhJS01RUlZZXmdydXaChYuSlJSWmJmoq6uur8LExcvM19fg5ejt8fX2+Pr7SljgewAAAKpJREFUGBkFwQNCAwAAAMDLtl3LtrG4rWXbtvX77gAgZ6grFwC0bhwNVgKgdPZx8b0dgLi+s7Wn0VoAqpfOI9+BNADZI7fLrz2pSEwGHZuH+78lSK8ZLkLezF3ooyUG3VPXq2USei9WngeyoG195yBYWDF3E/2pAhl1e9Gr8bGT+bfOFCC2fnvh4X7rcqIAQNNu+HT6sxkAjceTL/2ZAIhv+PorBwBJxfkA//dFHSCBy/UTAAAAAElFTkSuQmCC);background-image:url(http://ecotheory.uwaterloo.ca/labwiki/resources/mediawiki.action/images/green-checkmark.png?2014-04-29T20:18:20Z)!ie;background-position:left}.postedit-close{position:absolute;padding:0 .8em;right:0;top:0;font-size:1.25em;font-weight:bold;line-height:2.3em;color:black;text-shadow:0 0.0625em 0 white;text-decoration:none;opacity:0.2;filter:alpha(opacity=20)}.postedit-close:hover{color:black;text-decoration:none;opacity:0.4;filter:alpha(opacity=40)}
+/* cache key: c4aps1:resourceloader:filter:minify-css:7:049feb011dd7f69e23a9228e907dbda9 */</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{text-decoration:none;color:black}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:white}
+/* cache key: c4aps1:resourceloader:filter:minify-css:7:52b1797f70c7e4094dfa4191101944e8 */</style><meta name="ResourceLoaderDynamicStyles" content="">
+<style>a:lang(ar),a:lang(ckb),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: c4aps1:resourceloader:filter:minify-css:7:426707202cfab209bf2cad01b57c24be */</style>
+
+<script src="3D%20scanning%20-%20labwiki_files/load_003.php"></script><script src="3D%20scanning%20-%20labwiki_files/load.php"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"3D_scanning","wgTitle":"3D scanning","wgCurRevisionId":17,"wgRevisionId":17,"wgArticleId":7,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"3D_scanning","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"vector-simplesearch":1,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,
+"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+::","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: c4aps1:resourceloader:filter:minify-js:7:cadeaba0ca5bae21a7f35c73f763d846 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","skins.vector.js"]);
+}</script><script src="3D%20scanning%20-%20labwiki_files/load_002.php"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/labwiki/skins/vector/csshover.min.htc")}</style><![endif]--><script async="" src="3D%20scanning%20-%20labwiki_files/load_004.php"></script></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-3D_scanning skin-vector action-view vector-animateLayout">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">3D scanning</span></h1>
+			<div id="bodyContent">
+								<div id="siteSub">From labwiki</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-navigation">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="en"><p>Here,
+ an outline for successful capture of the 3D structure of a plant is 
+presented. The scanner used is a Creaform REVscan portable scanner. The 
+software VX-Elements is used for data capture. The resolution of the 
+scanner is theoretically high enough to enable at least partial capture 
+of any plant structures, though in reality very fine structures like 
+tendrils are extremely difficult to capture. Similarly, the scanner will
+ usually not be able to detect two surfaces for the bottom and top of a 
+leaf, it will likely detect whichever it sees first, and be unable to 
+assign any sort of dimension to the leaf. The end result of this is that
+ leaves will be represented purely as surfaces (as opposed to volumes).
+</p>
+<h2><span class="mw-headline" id="Scanning_Setup_and_Protocol_Overview">Scanning Setup and Protocol Overview</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://ecotheory.uwaterloo.ca/labwiki/index.php?title=3D_scanning&amp;action=edit&amp;section=1" title="Edit section: Scanning Setup and Protocol Overview">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>To begin, open VXElements on the computer that the scanner is 
+connected to (connect the scanner with the firewire cable). Scanning 
+works like this: first, positioning targets (the small black/white 
+stickers) are scanned, and then a surface is scanned relative to those 
+targets. So, the first step in scanning a plant is to assemble your 
+scanning stage. The small black box with positioning targets all over it
+ and around it has produced the best results. The optimal placement of 
+positioning targets will depend on the object being scanned, so 
+different objects may warrant different setups.
+</p><p>Once the plant/object to be scanned has been placed in your 
+scanning stage (Fig 1), you can begin to capture the positioning 
+targets. Click the dropdown arrow beside the “Scan” button in 
+VXelements, select “Scan positioning targets”, and do so. Once confident
+ all targets have been captured, click the dropdown once again, select 
+“Scan Surface” and do so.
+</p><p>The scanner seems to operate best at a distance of about 6-10 
+inches from the target. Looking carefully, a flashing red ‘X’ of light 
+can be seen, the apex of which seems to be the scanners focus. Watch the
+ screen of VXElements as you scan, and adjust technique as needed. This 
+can take some time to get used to. Capture from as many different angles
+ as possible.
+</p><p><br>
+</p>
+<h2><span class="mw-headline" id="Scanning_Protocol">Scanning Protocol</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://ecotheory.uwaterloo.ca/labwiki/index.php?title=3D_scanning&amp;action=edit&amp;section=2" title="Edit section: Scanning Protocol">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>1. Connect the scanner to the computer using the firewire cable. 
+Connect the firewire cable to an outlet BEFORE connecting the scanner.
+</p><p>2. Open VXElements software.
+</p><p>3. Place the plant you'd like to scan into whatever enclosure you are using.
+ADVICE: Use flowerwire to support long stems. They may look stable but the do move slightly via changes in turgidity.
+</p><p>4. Ensure that you can see positioning targets from all angles around the plant. Add more if needed.
+</p><p>5. Start scanning: from the dropdown menu beside "Scan" select 
+"Scan Positioning Targets". Then, click the "Scan" button, which should 
+now have a picture of a bent blue surface with a positioning target on 
+in.
+</p><p>6. Pull the trigger on the scanner to scan. Point the scanner at 
+the scanning stage (with plant in it), and move around the stage to make
+ sure the scanner has seen all of the positioning targets.
+</p><p>7. Once you have scanned all of the targets, put the scanner down
+ and press the "Scan" button again which should now have a "Pause" (||) 
+indicator.
+</p><p>8. From the same dropdown as before, now select "Scan Surface".
+</p><p>9. Before starting the scan, it may be helpful to change the 
+resolution of surface you are after. In the left menu, under "New 
+Project" there are a series of options. Select the "Surface" option. In 
+the "Surface Parameters" box, change the resolution to 0.3-0.5 mm. This 
+will make it easier to see how your scan is coming through in real time.
+</p><p>10. With the resolution changed, begin scanning by pressing the "Scan" button. 
+</p><p>11. Again, pull the trigger on the scanner to begin scanning. Use
+ the VXElements display as an indicator for your position. You should be
+ able to see parts of the plant being scanned in real time if you are 
+positioned well. Move around the stage, scanning from all angles. In 
+addition to changing angle, alter depth, one position may capture one 
+set of leaf tissue while missing leaf tissue further from the scanner.
+</p><p>12. Once your scan is taking shape, it may be wise to save your 
+progress. Press the "Pause" button, it may take a couple of minutes for 
+the computer to sort through all the raw data you've collected. Once the
+ scanned surface appears on the screen, save the session.
+</p><p>13. You may notice that you have not yet captured a leaf or stem,
+ you can restart scanning from this point to get more data. As you scan,
+ the indicator at the bottom right of the VXElements window will tell 
+you how much RAM your scan is currently using. The higher this&nbsp;% 
+goes, the more sluggish the computer becomes. To cut back on how much 
+memory in use, extraneous data can be deleted. The enclosure surrounding
+ your plant will inevitably get scanned along with the plant. Do delete 
+this data, enter editing mode by clicking "Edit Facets". In this mode 
+you have a number of selection tools available, and then some simple 
+operations to perform on selected data. Select areas corresponding to 
+the enclosure, moving to get good angles by alternating between "Move 
+Object" and "Rectangle Selection". Note that the selection will select 
+everything along an axis, so you must zoom/rotate the image to get good 
+angles for selection. Once you've selected a bunch of data you are sure 
+can be deleted, delete it by selecting "Delete Facets" from the operator
+ dropdown menu. This also may take some time. With extraneous data 
+removed it will be much easier to see which parts of your plant need 
+further scanning. Repeat this step (13) as necessary, until you are 
+satisfied with the quality of your scan.
+</p><p>14. Before saving and exporting, do one final cleanup of the 
+data. VXelements has an number of options available for automatically 
+cleaning up your scan. The most helpful of these are the options under 
+the "facets" tab of the left menu. Under this menu, scroll down to the 
+bottom of the set of sliders, and set the "remove isolated patches" 
+slider to around the first or second tick. Click apply to remove most of
+ the dusty artifacts picked up during scanning. Feel free to play around
+ with other settings, but be careful to save your session before you 
+tweak,, some changes are quite catastrophic (and irreversible) for the 
+scale of plants. Once you are happy with your scan and do not have 
+unreasonable amounts of extraneous data, save your session. The session 
+is a VXElements file format. To use the 3D image we've just created in 
+other software, there are a number of more universal formats available. 
+"*.stl" files seem to be the most flexible and commonly used. Exporting 
+an STL file from VXElements is very simple. Simply "Save Facets", and an
+ stl file will be created. Now move on to <i>post-hoc</i> editing and analysis.
+</p><p><i><b>IMPORTANT CONSIDERATION</b></i>: Any movement at all of the
+ plant during scanning will ruin the scan. Unfortunately, pea plants 
+move enough naturally to cause problems. Because of this, scans that 
+take longer than 25-30 minutes tend to start producing doubled 
+structures. Around 15 minutes of scanning seems like the best compromise
+ between completeness and movement errors. The plant must be in it’s 
+“usual” pot. Any transplant immediately prior to scanning is bound to 
+cause significant and problematic wilting.
+</p><p>Significant post hoc work will need to be done to produce a 
+complete scan, focus on capturing leaf structures as these are the 
+hardest to recreate. As long as the “trajectory” of each stem is 
+captured, they can be filled in confidently after the fact.
+</p><p><br>
+</p>
+<h2><span class="mw-headline" id="Post-hoc_Manipulation"><i>Post-hoc</i> Manipulation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://ecotheory.uwaterloo.ca/labwiki/index.php?title=3D_scanning&amp;action=edit&amp;section=3" title="Edit section: Post-hoc Manipulation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The open source and free software package Blender <a rel="nofollow" class="external autonumber" href="http://www.blender.org/">[1]</a>
+ has been more than sufficient for the type of work needed for pea 
+plants. The set of tools used specifically here is fairly concise, but 
+there is still a significant learning curve associated with navigating 
+the software/3D space. Youtube has good instructional tutorials for 
+this. 
+</p><p>The primary manipulation of the data needed for pea plant scans 
+seems to be filling in of stem structures. To do this, a cylinder or 
+series of cylinders can be positioned and transformed so that they match
+ the trajectory of the stem. These can then be merged with the complete 
+structure. Because of the way that these files are represented in MATLAB
+ (at a lower resolution), the cylinder-fill in method seems reasonable 
+and not too intrusive w.r.t. the data’s original character. Obvious gaps
+ in leaf surfaces can also be filled in with blender fairly easily. 
+</p><p>Once the 3D structure has been manipulated to your heart’s content, export it once again as an STL file for import into MATLAB.
+</p><p>Perhaps I will prepare a short Blender intro document to explain how to do all of this.
+</p>
+<!-- 
+NewPP limit report
+CPU time usage: 0.012 seconds
+Real time usage: 0.013 seconds
+Preprocessor visited node count: 11/1000000
+Preprocessor generated node count: 16/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key c4aps1:pcache:idhash:7-0!*!*!!*!*!* and timestamp 20210825161340
+ -->
+</div>								<div class="printfooter">
+				Retrieved from "<a href="http://ecotheory.uwaterloo.ca/labwiki/index.php?title=3D_scanning&amp;oldid=17">http://ecotheory.uwaterloo.ca/labwiki/index.php?title=3D_scanning&amp;oldid=17</a>"				</div>
+												<div id="catlinks" class="catlinks catlinks-allhidden"></div>												<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+				<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+	<h3 id="p-personal-label">Personal tools</h3>
+	<ul>
+<li id="pt-login"><a href="http://ecotheory.uwaterloo.ca/labwiki/index.php?title=Special:UserLogin&amp;returnto=3D+scanning" title="You are encouraged to log in; however, it is not mandatory [alt-shift-o]" accesskey="o">Log in</a></li>	</ul>
+</div>
+				<div id="left-navigation">
+					<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+	<h3 id="p-namespaces-label">Namespaces</h3>
+	<ul>
+					<li id="ca-nstab-main" class="selected"><span><a href="http://ecotheory.uwaterloo.ca/labwiki/index.php?title=3D_scanning" title="View the content page [alt-shift-c]" accesskey="c">Page</a></span></li>
+					<li id="ca-talk" class="new"><span><a href="http://ecotheory.uwaterloo.ca/labwiki/index.php?title=Talk:3D_scanning&amp;action=edit&amp;redlink=1" title="Discussion about the content page [alt-shift-t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+	<h3 id="mw-vector-current-variant">
+		</h3>
+	<h3 id="p-variants-label" tabindex="0"><span>Variants</span><a href="#" tabindex="-1"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+				</div>
+				<div id="right-navigation">
+					<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+	<h3 id="p-views-label">Views</h3>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="http://ecotheory.uwaterloo.ca/labwiki/index.php?title=3D_scanning">Read</a></span></li>
+					<li id="ca-edit"><span><a href="http://ecotheory.uwaterloo.ca/labwiki/index.php?title=3D_scanning&amp;action=edit" title="You can edit this page. Please use the preview button before saving [alt-shift-e]" accesskey="e">Edit</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="http://ecotheory.uwaterloo.ca/labwiki/index.php?title=3D_scanning&amp;action=history" title="Past revisions of this page [alt-shift-h]" accesskey="h">View history</a></span></li>
+			</ul>
+</div>
+<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+	<h3 id="p-cactions-label" tabindex="0"><span>Actions</span><a href="#" tabindex="-1"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+<div id="p-search" role="search">
+	<h3><label for="searchInput">Search</label></h3>
+	<form action="/labwiki/index.php" id="searchform">
+				<div id="simpleSearch">
+						<input name="search" placeholder="Search" title="Search labwiki [alt-shift-f]" accesskey="f" id="searchInput" tabindex="1" autocomplete="off">						<button type="submit" name="button" title="Search the pages for this text" id="searchButton"><img src="3D%20scanning%20-%20labwiki_files/search-ltr.png" alt="Search" width="12" height="13"></button>								<input type="hidden" name="title" value="Special:Search">
+		</div>
+	</form>
+</div>
+				</div>
+			</div>
+			<div id="mw-panel" class="collapsible-nav">
+					<div id="p-logo" role="banner"><a style="background-image: url(/labwiki/skins/common/images/edgeLB.png);" href="http://ecotheory.uwaterloo.ca/labwiki/index.php?title=Main_Page" title="Visit the main page"></a></div>
+				<div class="portal first persistent" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label">Navigation</h3>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="http://ecotheory.uwaterloo.ca/labwiki/index.php?title=Main_Page" title="Visit the main page [alt-shift-z]" accesskey="z">Main page</a></li>
+			<li id="n-recentchanges"><a href="http://ecotheory.uwaterloo.ca/labwiki/index.php?title=Special:RecentChanges" title="A list of recent changes in the wiki [alt-shift-r]" accesskey="r">Recent changes</a></li>
+			<li id="n-randompage"><a href="http://ecotheory.uwaterloo.ca/labwiki/index.php?title=Special:Random" title="Load a random page [alt-shift-x]" accesskey="x">Random page</a></li>
+		</ul>
+	</div>
+</div>
+<div class="portal expanded" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" tabindex="2"><a href="#">Tools</a></h3>
+	<div class="body" style="display: block;">
+		<ul>
+			<li id="t-whatlinkshere"><a href="http://ecotheory.uwaterloo.ca/labwiki/index.php?title=Special:WhatLinksHere/3D_scanning" title="A list of all wiki pages that link here [alt-shift-j]" accesskey="j">What links here</a></li>
+			<li id="t-recentchangeslinked"><a href="http://ecotheory.uwaterloo.ca/labwiki/index.php?title=Special:RecentChangesLinked/3D_scanning" title="Recent changes in pages linked from this page [alt-shift-k]" accesskey="k">Related changes</a></li>
+			<li id="t-specialpages"><a href="http://ecotheory.uwaterloo.ca/labwiki/index.php?title=Special:SpecialPages" title="A list of all special pages [alt-shift-q]" accesskey="q">Special pages</a></li>
+			<li id="t-print"><a href="http://ecotheory.uwaterloo.ca/labwiki/index.php?title=3D_scanning&amp;printable=yes" rel="alternate" title="Printable version of this page [alt-shift-p]" accesskey="p">Printable version</a></li>
+			<li id="t-permalink"><a href="http://ecotheory.uwaterloo.ca/labwiki/index.php?title=3D_scanning&amp;oldid=17" title="Permanent link to this revision of the page">Permanent link</a></li>
+			<li id="t-info"><a href="http://ecotheory.uwaterloo.ca/labwiki/index.php?title=3D_scanning&amp;action=info">Page information</a></li>
+		</ul>
+	</div>
+</div>
+			</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 30 April 2014, at 10:30.</li>
+											<li id="footer-info-viewcount">This page has been accessed 14 times.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="http://ecotheory.uwaterloo.ca/labwiki/index.php?title=Name_wiki:Privacy_policy" title="Name wiki:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="http://ecotheory.uwaterloo.ca/labwiki/index.php?title=Name_wiki:About" title="Name wiki:About">About labwiki</a></li>
+											<li id="footer-places-disclaimer"><a href="http://ecotheory.uwaterloo.ca/labwiki/index.php?title=Name_wiki:General_disclaimer" title="Name wiki:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="3D%20scanning%20-%20labwiki_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31"></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.vector.collapsibleNav"],null,true);
+}</script>
+<script>if(window.mw){
+mw.loader.state({"site":"ready"});
+}</script>
+<!-- Served in 0.261 secs. -->
+	
+
+<div style="display: none; font-size: 13px;" class="suggestions"><div class="suggestions-results"></div><div class="suggestions-special"></div></div></body></html>
