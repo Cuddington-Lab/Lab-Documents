@@ -33,6 +33,10 @@ Once the duckweed experiment is over on Wednesday, transfer the duckweed jars to
 7. Pour the hoglands solution back into the used solution container. If the solution has been used twice, discard.
 8. Ensure all the jars are emptied and discard the duckweed.
 9. Rinse the jars and place to dry.
+10. Post experiment stat analysis
+	- Add the respective excel protocol files to a new folder and name it
+        - Run the cat_stat's code to generate the categorizations (cat_1 and cat_1_4), and standard deviations for each incubator
+        -Open each protocol file and plot the time vs actual temperature to visually identify any significant gaps present. If there are large gaps (>5h), determine the actual length. Key in "y" and gap size in appropriate columns. If no gaps present, key in "n" and keep the gap_size column blank (note: this is done in the metafile)
 
 ## <span class="underline">Population Maintenance</span>
 
