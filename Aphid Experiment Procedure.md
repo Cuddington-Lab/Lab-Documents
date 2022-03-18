@@ -62,3 +62,6 @@
     -   Excel file should open with data
 
         -   Confirm that temperature data was recorded
+        -   Add the respective excel protocol files to a new folder and name it
+        -   Run the cat_stat's code to generate the categorizations (cat_1 and cat_1_4), and standard deviations for each incubator
+        -   Open each protocol file and plot the time vs temperature to visual identify any significant gaps present. If there are large gaps (>5h), determine the actual length. Key in "y" and gap size in appropriate columns. If no gaps present, key in "n" and keep the gap_size column blank
