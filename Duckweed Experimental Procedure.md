@@ -1,30 +1,45 @@
 # **Duckweed Experimental Procedure**
 
-*Updated: January 2022*
+*Updated: November 2021*
 
 ## <span class="underline">Experimental Setup</span>
 
 Duckweed is to be transferred in the laminar flow room (use lab key to open the door). Gloves are required to avoid contamination. Duckweed experiments would run along with the aphid experiments in the incubators (same set up and end time for each run).
 
 1.  For the flow hood, turn on the light (red power button) and the fan (black turbine) to start the laminar flow.
-
 2.  Use ethanol (in flammable cabinet) to wipe the counter in the laminar flow room with paper towel.
-
 3.  Fill the glass alcohol burner with ethanol if low, and adjust the rope if necessary.
-
-4.  Pour \~15 mL (can be a bit less if supplies are low) of the growth medium Hoglands solution (in the large fridge) with a graduated cylinder into 18 small jars, for 3 replicate jars per incubator treatment.
-
+4.  Pour \~20 mL (can be a bit less if supplies are low) of the growth medium Hoglands solution (in the large fridge) with a graduated cylinder into 12 small jars, for 3 replicate jars per incubator treatment.
 5.  Light the glass alcohol burner with a flame lighter and sterilize the titanium loop. Note that the due to the active air flow, the flame will bend away from the wall (i.e. towards you) so be careful!
 
     -   Sterilization - place the loop in the flame from the glass alcohol burner above the wick, then remove when the loop glows red. The loop should cool after \~1-2 seconds.
-
-6.  Place 4 (four) duckweed fronds (equivalent to 2 duckeed colonies) (from the newest "Source" duckweed population in incubator 5) with the titanium loop into each treatment jar. In between transfers, sterilize the loop each time.
-
-7.  Place Parafilm over the replicate jars to completely cover them, and label the jars with the date, experiment number, incubator number, mean temperature, and autocorrelation number. Also replace the Parafilm covering the control duckweed population and return it to incubator 5.
-
+6.  Place 4 duckweed fronds (2 colonies composed of 2 fronds each from the "Source" duckweed population in incubator 1) with the titanium loop into each treatment jar. In between transfers, sterilize the loop each time.
+7.  Place Parafilm over the replicate jars to completely cover them, and label the jars with the date, experiment number, incubator number, mean temperature, and autocorrelation number. Also replace the Parafilm covering the control duckweed population and return it to incubator 1.
 8.  Place treatment jars into their corresponding incubator.
-
 9.  Hope the incubators work properly without distractions.
+
+## Experiment End Procedure
+
+Once the duckweed experiment is over on Wednesday, transfer the duckweed jars to the laminar flow room. Gloves are required to avoid contamination.
+
+1.  For the flow hood, turn on the light (red power button) and the fan (black turbine) to start the laminar flow.
+2.  Use ethanol (in flammable cabinet) to wipe the counter in the laminar flow room with paper towel.
+3.  Fill the glass alcohol burner with ethanol if low, and adjust the rope if necessary.
+4.  Light the glass alcohol burner with a flame lighter and sterilize the titanium loop. Note that the due to the active air flow, the flame will bend away from the wall (i.e. towards you) so be careful!
+    -   Sterilization - place the loop in the flame from the glass alcohol burner above the wick, then remove when the loop glows red. The loop should cool after \~1-2 seconds.
+
+5.  Count the duckweed fronds in each jar and log into the experiment diary. 
+6. Remove the duckweed from the jars and place in a water filled petri dish. Make sure to sterilize the titanium loop everytime.
+7. Pour the hoglands solution back into the used solution container. If the solution has been used twice, discard.
+8. Ensure all the jars are emptied and discard the duckweed.
+9. Rinse the jars and place to dry.
+10. Post experiment stat analysis
+	- Confirm that temperature data was recorded
+        -   Add the respective excel protocol files to a new folder and name it
+        -   Run the cat_stat's code to generate the categorizations (cat_1 and cat_1_4), and standard deviations for each incubator
+        -   Note: Cat_1 is the code to determine the categorization (i.e., determining positive or negative autocorrelation) of the temperature sequence based on the entire overall temperature sequence, whereas cat_1_4 is code to determine the categorization based on the temperatures ocurring in the first quarter of the temperature sequence. The categorizations determined using these two different methods are often opposite of each other. 
+        -   Open each protocol file and plot the time vs temperature to visual identify any significant gaps present. If there are large gaps (>5h), determine the actual length. Key in "y" and gap size in appropriate columns. If no gaps present, key in "n" and keep the gap_size column blank
+        -   Update the metafile and aphid spreadsheet with the experimental data, categorization for cat_1 and cat_1_4, and the set vs actual: mean, standard deviation and autocorrelation, and lastly the gap info 
 
 ## <span class="underline">Population Maintenance</span>
 
@@ -74,4 +89,5 @@ Once every month we need to create a new stock population. This is to ensure we 
 4. Sterilizing frequently, add 30 fronds from last month's stock to the new container.
 5. Once completed, cover with 2 layers of parafilm and mark the date on top using a post it note.
 6. Enter the frond number and date onto "Duckweed Stock Culture Maintenance".
+
 
