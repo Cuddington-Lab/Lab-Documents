@@ -2,7 +2,7 @@
 
 *Updated September 10/2021*
 
-| 2 Weeks Prior (Friday)                                       | [1 Week Prior (Thursday/Friday)](#Experiment-Preparations-(thursday))                               | Experiment Start (Friday)                                    |
+| 2 Weeks Prior (Friday)                                       | 1 Week Prior (Thursday/Friday)                               | Experiment Start (Friday)                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | :----------------------------------------------------------- |
 | - Plant 1 tray of pea plants (one seed per pot) and place in growth chamber in the greenhouse (16:8 light:dark, temp?) | - Retrieve 4 plants from the greenhouse growth chambers, place 4 aphids (mature adults without wings) on each plant (Thursday) <br /><br /> - Place plants in incubator at 20C (16:8) for 24 hours (Thursday)<br /><br /> - After 24 hours, remove adult aphids, leave nymphs to develop for 1 week. (Friday) | - Collect 2 week old plants from the greenhouse (9-12 plants depending on how many incubators work) <br /><br /> - One round tray goes in each incubator <br />	 - Three plants per tray <br /> 	- One even-aged adult aphid on     	    each plant (from experimental	    prep) |
 
@@ -39,7 +39,7 @@
 
         -   Repeat steps until all incubators are set up
 
-## Experiment Completion (Saturday)
+## Experiment Completion (Wednesday)
 
 -   Remove trays from the incubator and count aphids on each plant
 
@@ -57,8 +57,13 @@
 
         -   File>load protocol data>from file> select matching protocol> OK
 
-        -   File>save protocol data> to file (\*.pro)\...\>choose name matching protocol(remove.pro)>OK
+        -   File>save protocol data> to report>select save to excel file (make sure that all data is in the selected column)\...\>choose name matching protocol(remove.pro)>OK
 
     -   Excel file should open with data
 
         -   Confirm that temperature data was recorded
+        -   Add the respective excel protocol files to a new folder and name it
+        -   Run the cat_stat's code to generate the categorizations (cat_1 and cat_1_4), and standard deviations for each incubator
+        -   Note: Cat_1 is the code to determine the categorization (i.e., determining positive or negative autocorrelation) of the temperature sequence based on the entire overall temperature sequence, whereas cat_1_4 is code to determine the categorization based on the temperatures ocurring in the first quarter of the temperature sequence. The categorizations determined using these two different methods are often opposite of each other. 
+        -   Open each protocol file and plot the time vs temperature to visual identify any significant gaps present. If there are large gaps (>5h), determine the actual length. Key in "y" and gap size in appropriate columns. If no gaps present, key in "n" and keep the gap_size column blank
+        -   Update the metafile and aphid spreadsheet with the experimental data, categorization for cat_1 and cat_1_4, and the set vs actual: mean, standard deviation and autocorrelation, and lastly the gap info 
