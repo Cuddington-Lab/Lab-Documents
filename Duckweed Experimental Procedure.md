@@ -37,7 +37,7 @@ Once the duckweed experiment is over on Wednesday, transfer the duckweed jars to
 	- Confirm that temperature data was recorded
         -   Add the respective excel protocol files to a new folder and name it
         -   Run the cat_stat's code to generate the categorizations (cat_1 and cat_1_4), and standard deviations for each incubator
-        -   Note: Cat_1 is the code to determine the categorization (i.e., determining positive or negative autocorrelation) of the temperature sequence based on the entire overall temperature sequence, whereas cat_1_4 is code to determine the categorization based on the temperatures ocurring in the first quarter of the temperature sequence. The categorizations determined using these two different methods are often opposite of each other. 
+        -   Note: Cat_1 is the code to determine the categorization (i.e., determining positive or negative slope) of the temperature sequence based on the entire overall temperature sequence, whereas cat_1_4 is code to determine the categorization based on the temperatures ocurring in the first quarter of the temperature sequence. The categorizations determined using these two different methods are often opposite of each other. 
         -   Open each protocol file and plot the time vs temperature to visual identify any significant gaps present. If there are large gaps (>5h), determine the actual length. Key in "y" and gap size in appropriate columns. If no gaps present, key in "n" and keep the gap_size column blank
         -   Update the metafile and aphid spreadsheet with the experimental data, categorization for cat_1 and cat_1_4, and the set vs actual: mean, standard deviation and autocorrelation, and lastly the gap info 
 
